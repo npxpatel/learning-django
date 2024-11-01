@@ -7,6 +7,8 @@ from django.urls import reverse
 #     html = "<html><body>Home page</body></html>"
 #     return HttpResponse(html)
 
+def home(request):
+    return render(request, 'posts/home.html')
 
 
 def post(request, id):
